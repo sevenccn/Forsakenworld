@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    color: #fff;
+}
+
+/* Al die img zijn gemaakt door mij */
+#shirtkenaji,
+#jacketkenaji,
+#armorkenaji,
+#shirtinakai,
+#jacketinakai,
+#armorinakai,
+#end {
+    background-color: rgb(28, 33, 40);
+    width: 10em;
+    height: 5em;
+    margin: 0 30px;
+}
+
+#bovenkleding {
+    width: 50%;
+    height: 50%;
+}
+
+/* Foto van pinterest: TLOU */
+.ending {
+    background-image: url('end.jpg');
+    background-size: cover;
+    height: 110vh;
+}
+
+.ending p {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+/* Al die img zijn gemaakt door mij */
+.forsaken {
+    background-image: url('Background_programmeren_2.png');
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 145vh;
+    position: relative;
+}
+
+/* Al die img zijn gemaakt door mij */
+.choice {
+    background-image: url('Character_programmeren.png');
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+}
+
+.forsaken header section div p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.outfit {
+    margin-top: 20em;
+    gap: 4em;
+}
+
+/* Al die img zijn gemaakt door mij */
+.characters {
+    background-color: #353B49;
+    width: 100vw;
+    height: 133vh;
+}
+
+.container {
+    margin: 0 10px;
+}
+
+.small {
+    font-size: 2em;
+    border: 0.1em solid rgb(3, 15, 30);
+    background-color: rgb(28, 33, 40);
+    padding: 0.5em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.glitch-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: rgb(28, 33, 40);
+    color: #fff;
+    font-size: 3em;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 0.3em;
+}
+
+h1 {
+    font-size: 8em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 3em;
+}
+
+
+/* https://youtu.be/oYRda7UtuhA?si=iISulCSEsPxQtUwN - rond 10:30 min - reden voor 2% 6% */
+ul {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/* https://learn.shayhowe.com/advanced-html-css/transitions-animations/ - transitional button*/
+
+li {
+    list-style-type: none;
+}
+
+nav ul li {
+    border: 0.2em solid rgb(3, 15, 30);
+    background-color: rgb(28, 33, 40);
+    padding: 0.8em;
+    width: 9em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* https://youtu.be/oYRda7UtuhA?si=iISulCSEsPxQtUwN - rond 15 min - Interactief nav balk outline */
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 0.2em;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* Chat GPT*/
+nav a.active {
+    text-decoration: underline;
+    font-size: large;
+    background-color: rgb(28, 33, 40);
+}
+
+header section div {
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+}
+
+div p {
+    font-size: 3em;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+div {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+/* chat cpt -"kun je een glitch button voor me maken met css */
+@keyframes glitch-animation {
+    0% {
+        transform: translate(0);
+        background-color: rgb(43, 51, 61);
+    }
+
+    20% {
+        transform: translate(-5px, -5px);
+        background-color: rgb(28, 33, 40);
+    }
+
+    40% {
+        transform: translate(5px, 5px);
+        background-color: rgb(43, 51, 61);
+    }
+
+    60% {
+        transform: translate(-5px, 5px);
+        background-color: rgb(28, 33, 40);
+    }
+
+    80% {
+        transform: translate(5px, -5px);
+        background-color: rgb(43, 51, 61);
+    }
+
+    100% {
+        transform: translate(0);
+        background-color: rgb(28, 33, 40);
+    }
+}
+
+.glitch-button:hover {
+    animation: glitch-animation 0.5s linear;
+}
+
+
+/* van internetstandaarden */
+footer {
+    background-color: rgb(28, 33, 40);
+    border: 0.125em solid rgb(3, 15, 30);
+    width: 100vw;
+    height: 3vh;
+    margin: auto;
+    color: white;
+    padding-bottom: 2em;
+    font-size: large;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 0 2%;
+}
+
+footer ul li a {
+    display: flex;
+    color: #fff;
+}
