@@ -22,15 +22,15 @@
 }
 
 #bovenkleding {
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
 }
 
 /* Foto van pinterest: TLOU */
 .ending {
     background-image: url('end.jpg');
     background-size: cover;
-    height: 110vh;
+    height: 120vh;
 }
 
 .ending p {
@@ -43,20 +43,26 @@
 /* Al die img zijn gemaakt door mij */
 .forsaken {
     background-image: url('Background_programmeren_2.png');
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 145vh;
-    position: relative;
+    height: 100vh;
 }
 
 /* Al die img zijn gemaakt door mij */
 .choice {
     background-image: url('Character_programmeren.png');
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
     width: 100vw;
-    height: 150vh;
-    position: relative;
+    height: 150vh; 
+ 
 }
+
+.choice header {
+    font-size: .8em;
+    }
 
 .forsaken header section div p {
     margin: 0;
@@ -64,15 +70,15 @@
 }
 
 .outfit {
-    margin-top: 20em;
+    margin-top: 45em;
     gap: 4em;
+    font-size: .6em;
 }
 
 /* Al die img zijn gemaakt door mij */
 .characters {
     background-color: #353B49;
-    width: 100vw;
-    height: 133vh;
+    height: 136vh;
 }
 
 .container {
@@ -101,8 +107,16 @@
     margin-top: 0.3em;
 }
 
+.forsaken,
+.choice,
+.characters {
+    width: 100%;
+}
+
+
+
 h1 {
-    font-size: 8em;
+    font-size: 6em;
     margin-bottom: 0.5em;
     color: #fff;
 }
